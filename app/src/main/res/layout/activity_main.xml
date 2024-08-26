@@ -8,6 +8,38 @@
     tools:context=".MainActivity"
     android:layout_margin="16dp">
 
+
+    <!--list of all device sensors-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of all Sensors"
+        app:layout_constraintBottom_toTopOf="@+id/scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/sensor_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(placeholder)"
+            />
+
+    </ScrollView>
+
+
     <TextView
         android:id="@+id/label_light"
         android:layout_width="wrap_content"
@@ -31,8 +63,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label_proximity"
-        android:src="@drawable/check"
+        android:src="@drawable/security"
         />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

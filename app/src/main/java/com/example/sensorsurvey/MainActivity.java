@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
-        /*
-        list of all sensors
+
+        //list of all sensors
         List<Sensor> sensorList  = mSensorManager.getSensorList(Sensor.TYPE_ALL);
 
         StringBuilder sensorText = new StringBuilder();
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         TextView sensorTextView = (TextView) findViewById(R.id.sensor_list);
         sensorTextView.setText(sensorText);
-        */
+
 
         /*sensor data*/
 
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         // Minimum size for the ImageView (in pixels)
         int minSize = 100;  // Set this to the minimum size you want
-        int maxSize = 500;  // Maximum size (when proximity is close)
+        int maxSize = 400;  // Maximum size (when proximity is close)
 
         // Calculate the new size based on the proximity value
         float maxRange = mSensorProximity.getMaximumRange();  // Get the maximum range of the sensor
